@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="userForm" onsubmit="return false;">
+    <div class="container">
+    <input type="text" class="input" placeholder="name" id="Name">
+    <input type="text" class="input" placeholder="father_name" id="Father_name">
+    <input type="text" class="input" placeholder="rollno" id="Rollno">
+    <input type="text" class="input" placeholder="age" id="Age">
+    <input type="text" class="input" placeholder="class" id="class">
+</form>
+</div>
+<div class="btn">
+<button id="btn" onclick="add_name()"> Add here</button>
+<button id="delet_btn" onclick="delete_btn()">delete</button>
+</div>
+
+<div class="table_container">
+    <table id="table">
+        
+        <tr id="tr">
+            <th>s.no</th>
+            <th>name</th>
+            <th>father_name</th>
+            <th>rollno</th>
+            <th>age</th>
+            <th>class</th>
+        </tr>
+    
+
+    </table>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
